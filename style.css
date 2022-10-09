@@ -1,0 +1,97 @@
+body {
+  background: 'red';
+}
+
+body {
+  background:'blue';
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#p1 {
+  width:100px;
+  height:100px;
+}
+
+.p1Choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#p1Health {
+  font-size: 50px;
+}
+
+#p2{
+  width:100px;
+  height:100px;
+}
+
+
+.p2Choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#p2Health {
+  font-size: 50px;
+}
+
+#result {
+  font-size: 50px
+}
+
+.resultContainer {
+    display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height:150px;
+  width: 300px;
+}
+
+.attack {
+  background-color: yellow;
+  padding: 1em;
+}
+
+.heal {
+  background-color: rgba(130, 222, 255, 0.87);
+  padding: 1em;
+}
+
+#reset {
+  width: 300px;
+  padding: 0.5em;
+  background-color: aquamarine;
+  font-size: x-large;
+}
+
+.title {
+font-size: x-large;
+font-style: italic;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#result {
+  color: green;
+  font-size: larger;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <div class="title">Fighting Game</div>
+  <br>
+  
+  <div class="menu">
+    <div class="p1Choices">
+      <img 
+      id="p1" 
+      src="https://i.gifer.com/origin/00/0019f6845ceaa9347b881ccbe8f5644a_w200.gif"
+      />
+      <h3 class="attack">Attack : Q</h3> 
+    
+      <h3 class="heal" > Heal : A</h3> 
+      
+      <div  id="p1Health">100</div>
+    </div>
+
+    <div class="p2Choices">
+      <img 
+        id="p2" 
+        src="OBRutKy.gif"
+      />
+      <h3 class="attack">Attack : P</h3> 
+    
+      <h3 class="heal"> Heal : L</h3> 
+      <div id="p2Health">100</div>
+    </div>
+
+  </div>
+  <br>
+  
+  <div class="resultContainer">
+      <div id="result"></div>
+      <button id="reset">Reset</button>
+  </div>
+
+<audio id="p1attack" controls style="display:none">
+  <source src="sounds/fastpunch.mp3" type="audio/mpeg"> 
+</audio>
+<audio id="p1heal" controls style="display:none">
+  <source src="sounds/fastheal.mp3" type="audio/mpeg"> 
+</audio>
+<audio id="p2attack" controls style="display:none">
+  <source src="sounds/quickhit.mp3" type="audio/mpeg"> 
+</audio>
+<audio id="p2heal" controls style="display:none">
+  <source src="sounds/quickheal.mp3" type="audio/mpeg"> 
+</audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
