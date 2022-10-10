@@ -37,11 +37,13 @@ function startGame() {
   function gameResult(player1,player2) {
     if (player1.health<=0) {
       document.getElementById("result").innerText=`${player2.name} won`
+      document.getElementById('gameEnd').play()
       enable=false
       return ;
     }
     if (player2.health<=0) {
       document.getElementById("result").innerText=`${player1.name} won`
+      document.getElementById('gameEnd').play()
       enable=false
       return ;
     }
@@ -60,13 +62,11 @@ function startGame() {
   document.addEventListener("keydown",chooseKey)
   document.getElementById('reset').addEventListener("click",function() { 
     reset(lance,qazi)
-    console.log("after reset" + enable);
    }
   )
   
   function chooseKey(event)
   {
-    console.log("chooseKey :",enable);
     if (enable) { // enable=true game didn't finish yet 
     switch (event.key) {
       case ("q") :
